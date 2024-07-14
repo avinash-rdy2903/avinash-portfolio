@@ -14,8 +14,8 @@
           "class": "fab fa-linkedin"
         }
       ],
-      "profile_pic": "images/myProfile.jpg",
-      "aws_icon":"images/aws.png"
+      "profile_pic": "myProfile.jpg",
+      "aws_icon":"aws.png"
     },
     "skills": {
       "icons": [
