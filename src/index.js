@@ -12,7 +12,10 @@ window.$secondaryLanguage = 'pl';
 window.$primaryLanguageIconId = 'primary-lang-icon';
 window.$secondaryLanguageIconId = 'secondary-lang-icon';
 
-
+if (process.env.REACT_APP_NODE_ENV === 'production') {
+    console.log("disable dev tools");
+    disableReactDevTools();
+  }
 
 const root = createRoot(document.getElementById('root'));
 root.render(<App />);
