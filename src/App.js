@@ -1,142 +1,144 @@
-import React, { Component } from "react";
-import $ from "jquery";
+import React, {  useState } from "react";
 import "./App.scss";
+import resumeDataJson from "./res_primaryLanguage.json";
+import sharedDataJson from "./portfolio_shared_data.json";
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Education from "./components/Education";
 
-class App extends Component {
+let App= () => {
 
-  constructor(props) {
-    super();
-    this.state = {
-      foo: "bar",
-      resumeData: {},
-      sharedData: {},
-    };
-  }
+  
+  const [state,setState] = useState({
+    foo: "bar",
+    resumeData: resumeDataJson,
+    sharedData: sharedDataJson,
+  });
+  // let loadResumeFromPath= async (path)=> {
+  //   try{
+  //     let response = await fetch(`/${path}`,{
+  //       method: 'GET', 
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //     });
+  //     if(response.ok){
+  //       let json = await response.json();
+  //       setState((prev)=>{console.log(json);return {...prev, sharedData:JSON.parse(json)}})
+  //     }
+      
+  //   }catch(error){
+  //     console.error('Error fetching JSON:', error)
+  //   };
 
-  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-    document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
-    this.loadResumeFromPath(resumePath);
-  }
+  // }
+  
+  // let loadSharedData = async ()=> {
+  //   try{
+  //     let response = await fetch('/portfolio_shared_data.json',{
+  //       method: 'GET', 
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //     })
+  //     if(response.ok){
+  //       let json = await response.json();
+  //       setState((prev)=>{console.log(json);return {...prev, sharedData:JSON.parse(json)}})
+  //     }
+      
+  //   }catch(error){
+  //     console.error('Error fetching JSON:', error)
+  //   };
+    
+  // };
+ 
+  // useEffect(()=> {
+  //   console.log(`${process.env.PUBLIC_URL}`);
+  //   let callback = async ()=>{
+  //     await loadResumeFromPath(`res_primaryLanguage.json`);
+  //     await loadSharedData()
+  //   }
+    
+  //   callback();
+    
+  //   console.log(state);
+  // },[]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
-
-  componentDidMount() {
-    this.loadSharedData();
-    this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
-    );
-  }
-
-  loadResumeFromPath(path) {
-    $.ajax({
-      url: path,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ resumeData: data });
-      }.bind(this),
-      error: function (xhr, status, err) {
-        alert(err);
-      },
-    });
-  }
-
-  loadSharedData() {
-    $.ajax({
-      url: `portfolio_shared_data.json`,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
-      }.bind(this),
-      error: function (xhr, status, err) {
-        alert(err);
-      },
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <div className="col-md-12 mx-auto text-center language">
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$primaryLanguage,
-                window.$secondaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
-              data-inline="false"
-              id={window.$primaryLanguageIconId}
-            ></span>
-          </div>
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$secondaryLanguage,
-                window.$primaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
-              data-inline="false"
-              id={window.$secondaryLanguageIconId}
-            ></span>
-          </div>
+  return (
+    <div>
+      <Navbar sectionTitles = {state.resumeData.basic_info.section_name} />
+      <Header sharedData={state.sharedData.basic_info} />
+      {/* <div className="col-md-12 mx-auto text-center language">
+        <div
+          onClick={() =>
+            this.applyPickedLanguage(
+              window.$primaryLanguage,
+              window.$secondaryLanguageIconId
+            )
+          }
+          style={{ display: "inline" }}
+        >
+          <span
+            className="iconify language-icon mr-5"
+            data-icon="twemoji-flag-for-flag-united-kingdom"
+            data-inline="false"
+            id={window.$primaryLanguageIconId}
+          ></span>
         </div>
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-      </div>
-    );
-  }
+        <div
+          onClick={() =>
+            this.applyPickedLanguage(
+              window.$secondaryLanguage,
+              window.$primaryLanguageIconId
+            )
+          }
+          style={{ display: "inline" }}
+        >
+          <span
+            className="iconify language-icon"
+            data-icon="twemoji-flag-for-flag-poland"
+            data-inline="false"
+            id={window.$secondaryLanguageIconId}
+          ></span>
+        </div>
+      </div> */}
+      
+      <About
+        resumeBasicInfo={state.resumeData.basic_info}
+        sharedBasicInfo={state.sharedData.basic_info}
+      />
+      <Education
+        resumeBasicInfo={state.resumeData.basic_info}
+        educationData={state.resumeData.education}
+      />
+      <Experience
+        resumeBasicInfo={state.resumeData.basic_info}
+        sharedBasicInfo={state.sharedData.basic_info}
+        resumeExperience={state.resumeData.experience}
+      />
+      <Projects
+        resumeProjects={state.resumeData.projects}
+        resumeBasicInfo={state.resumeData.basic_info}
+      />
+      <Skills
+        sharedSkills={state.sharedData.skills}
+        resumeBasicInfo={state.resumeData.basic_info}
+      />
+      <Experience
+        resumeExperience={state.resumeData.experience}
+        resumeBasicInfo={state.resumeData.basic_info}
+      />
+      
+      
+      <Footer sharedBasicInfo={state.sharedData.basic_info} />
+    </div>
+  );
+  
 }
 
 export default App;

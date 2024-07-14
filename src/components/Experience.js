@@ -9,21 +9,22 @@ import Badge from "react-bootstrap/Badge";
 class Experience extends Component {
   render() {
     if (this.props.resumeExperience && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.experience;
+      var sectionName = this.props.resumeBasicInfo.section_name.experience.title;
+      var link = this.props.resumeBasicInfo.section_name.experience.link;
       var work = this.props.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
+            <div pill className="main-badge mr-2 mb-2 text-break rounded d-inline-flex" key={i}>
               {technology}
-            </Badge>
+            </div>
           );
         });
         var tech = technologies.map((technology, i) => {
           return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+            <Badge pill className="badge bg-yellow-200 me-2 mb-2 text-wrap" key={i}>
               {technology}
             </Badge>
           );
@@ -56,14 +57,19 @@ class Experience extends Component {
             >
               {work.company}
             </h4>
-            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+            
+
+            <div className="container p-2" style={{ textAlign: "left", marginTop: "15px", }}>{tech}</div>
+            <figcaption className="blockquote-footer col-sm-9 mt-2">
+              {work.description}
+            </figcaption>
           </VerticalTimelineElement>
         );
       });
     }
 
     return (
-      <section id="resume" className="pb-5">
+      <section id={link} className="pb-5">
         <div className="col-md-12 mx-auto">
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>

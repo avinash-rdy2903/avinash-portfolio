@@ -1,14 +1,36 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description": "As a passionate and skilled software engineer, I excel in both frontend and backend development, specializing in React, TypeScript, and AWS. With a Master's in Computer Science from Indiana University and experience in creating robust, scalable applications, I thrive on solving complex technical challenges and driving innovation. My expertise includes RESTful services, microservices architecture, and full-stack development. I'm dedicated to continuous learning and leveraging cutting-edge technologies to build impactful solutions.",
       "section_name": {
         "about": "About me",
-        "projects": "Projects",
+        "education": "Education",
+        "experience": "Experience",
         "skills": "Skills",
-        "experience": "Experience"
+        "projects": "Projects",
+        "research_achievements":"Research Achievements"                
       }
     },
+    "education":[
+      {
+        "institution_name":"Anna University",
+        "degree_name":"Bachelor of Technology",
+        "major":"Information Technology",
+        "start_ts":"Aug 2018",
+        "end_ts":"May 2022",
+        "gpa":"8.92",
+        "gpa_total":"10"
+      },
+      {
+        "institution_name":"Indiana University Bloomington",
+        "degree_name":"Master of Science",
+        "major":"Computer Science",
+        "start_ts":"Aug 2022",
+        "end_ts":"May 2025",
+        "gpa":"3.91",
+        "gpa_total":"4"
+      }
+    ],
     "projects": [
       {
         "title": "Animal Shelter",
@@ -81,23 +103,26 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "AISmart Solutions",
+        "title": "Software Engineer",
+        "years": "06.2020 - 05.2022",
         "mainTech": [
-          "Angular 8/9/10"
+          "Next.js, Spring Boot, Spring Cloud(Eureka, Api Gateway)"
         ],
         "technologies": [
           "REST API",
-          "RxJS",
+          "Spring Boot",
           "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
+          "Next.js",
+          "Tailwind CSS",
+          "Webpack",
+          "PostgreSQL",
+          "MongoDB",
+          "AWS",
+          "JWT"
+        ],
+        "description":"At AISmart Solutions, I improved SQL query performance, integrated server-side solutions with Spring Boot, and enhanced client-side functionality with Next.js. I also managed infrastructure optimizations, leveraged AWS services for scaling, and adhered to Agile methodologies to boost productivity. My technical expertise includes Java, Spring Framework, React, AWS, and various databases, with a focus on performance optimization and scalable architecture."
+
       },
       {
         "company": "Serros Solutions",
@@ -115,4 +140,4 @@
         ]
       }
     ]
-  }
+}

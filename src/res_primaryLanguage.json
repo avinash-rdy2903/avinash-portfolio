@@ -1,0 +1,193 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "As a seasoned software engineer with over 2 years of hands-on experience, I excel in both server-side and client-side development. My technical expertise spans across a variety of technologies including React/ React Native, TypeScript, Java, Spring Boot, Flowable, CSS,GraphQL, FastAPI, Terraform, and AWS. I have a Master's in Computer Science from Indiana University Bloomington and a Bachelor's in Information Technology from Anna University. My professional journey includes significant contributions to infrastructure optimization, database operations, and the implementation of RESTful microservices. I am adept at leveraging tools like Spring Boot, Redux, and Next.js to enhance application performance and user experience. Certified in AWS and Azure, I thrive in Agile environments and have a proven track record of driving project success.",
+      "section_name": {
+        "home": {
+          "title": "Home",
+          "link": "home"
+        },
+        "about": {
+          "title": "About me",
+          "link": "about"
+        },
+        "education": {
+          "title": "Education",
+          "link": "education"
+        },
+        "experience": {
+          "title": "Experience",
+          "link": "experience"
+        },
+        "skills": {
+          "title": "Skills",
+          "link": "skills"
+        },
+        "projects": {
+          "title": "Projects",
+          "link": "projects"
+        },
+        "research_achievements": {
+          "title": "Research Achievements",
+          "link": "research_achievements"
+        }
+      }      
+    },
+    "education":[
+      {
+        "institution_name":"Indiana University Bloomington",
+        "degree_name":"Master of Science",
+        "major":"Computer Science",
+        "start_ts":"Aug 2022",
+        "end_ts":"May 2025",
+        "gpa":"3.91",
+        "gpa_total":"4",
+        "course_work":"Object-Oriented Software Development, Distributed Systems, Cross-platform Mobile Programming, Applied Machine Learning"
+      },
+      {
+        "institution_name":"Anna University",
+        "degree_name":"Bachelor of Technology",
+        "major":"Information Technology",
+        "start_ts":"Aug 2018",
+        "end_ts":"May 2022",
+        "gpa":"8.92",
+        "gpa_total":"10",
+        "course_work":"Algorithm Design & Analysis, Advanced Data structures, Machine Learning Fundamentals, Probability and Statistics, Database Management  systems, Software Engineering, Principles of Operating Systems, Cloud Computing & Virtualization."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Flick Match",
+        "startDate": "2023",
+        "description": "Coordinated a team of three developers, and supervised the UI and integration of new features in the application while troubleshooting issues and tuning the application’s performance. Thus enhancing the response time by 24%. Designed the overall web application system architecture while incorporating CI/CD pipelines. Led and implemented server API endpoints along with middleware, and as a database admin, structured data models to satisfy up to 3NF.",
+        "images": [
+          "images/portfolio/travel-wizard/travel-wizard-1.jpg",
+          "images/portfolio/travel-wizard/travel-wizard-2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-react-original-wordmark",
+            "name": "React"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-java-plain-wordmark",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-spring-original-wordmark colored",
+            "name":"Spring Boot"
+          }
+        ]
+      },
+      {
+        "title": "Distributed Key-Value Store",
+        "startDate": "2023",
+        "description": "Developed a sophisticated distributed key-value store in Java, employing UDP and Multicast protocols for efficient network communication and leveraging Memcached for enhanced object storage. Engineered to support multiple consistency models including sequential, eventual, linearizability, and causal consistency.",
+        "images": [
+          "images/portfolio/photography/p1.svg",
+          "images/portfolio/photography/p2.png"
+        ],
+        "url": "https://github.com/avinash-rdy2903/Distributed-Systems/tree/main/src",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "FlickMatch",
+        "startDate": "2023",
+        "description": "Designed ORM using Spring Hibernate and DAO repository layer using JPA Entity Manager. Implemented proactive health-check API, and employed unit testing using JUnit. Caching using AWS ElastiCache for better response time. Utilized Redux library for state management of components and flux architecture for improved scalability. Employed sensors for faster authentication and refined recommendations.",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.png"
+        ],
+        "url": "https://github.com/avinash-rdy2903/flick-match",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Indiana University Bloomington",
+        "title": "Security Operation Intern",
+        "years": "Nov 2023 - May 2024",
+        "mainTech": [
+          "SSH, Azure, Security Engineering, Network Security"
+        ],
+        "technologies": [
+          "Azure",
+          "Linux",
+          "Bash"
+        ],
+        "description":"Effectively handling tier 1 technical analysis and response for cybersecurity incidents to end users and IT staff. Resolved 40% of backlog tickets by developing a log parser that extracts information needed for rapid tier 1 analysis. Thoroughly trained and acted cautiously to adhere to FREPA regulations and University policies in day-to-day operations."
+
+      },
+      {
+        "company": "Delite Software Technologies",
+        "title": "Software Engineer Intern",
+        "years": "May 2023 - July 2023",
+        "mainTech": [
+          "React.js, Redux, Spring Boot, Spring Cloud (Eureka, Api Gateway)"
+        ],
+        "technologies": [
+          "REST API",
+          "Spring Boot",
+          "JavaScript",
+          "Next.js",
+          "Tailwind CSS",
+          "Webpack",
+          "PostgreSQL",
+          "MongoDB",
+          "AWS",
+          "JWT"
+        ],
+        "description":"Implemented RESTful microservices using Spring MVC, Spring Cloud, and Redis caching for a State Government Record Management System, enhancing throughput by 40% and achieving 99.99% uptime. Integrated Spring Security with JWT for authentication. Enhanced UI by incorporating lazy loading of React components, improving page load speed by 30%. Designed Redux thunks for async server calls, reducing Total Blocking Time by 150ms. Utilized Hibernate for caching and transaction management. Adopted TTD approach using JUnit, Mockito, and Mocha for unit and integration tests. Leveraged AWS Auto-Scaling and canary testing, reducing cross-feature bugs by 10%."
+
+      },
+      {
+        "company": "AISmart Solutions",
+        "title": "Software Engineer",
+        "years": "Jun 2020 - May 2022",
+        "mainTech": [
+          "Next.js, Spring Boot, Spring Security, JWT, Spring AOP"
+        ],
+        "technologies": [
+          "REST API",
+          "Spring Boot",
+          "JavaScript",
+          "Next.js",
+          "Tailwind CSS",
+          "Webpack",
+          "PostgreSQL",
+          "MongoDB",
+          "AWS",
+          "JWT"
+        ],
+        "description":"At AISmart Solutions, I improved SQL query performance, integrated server-side solutions with Spring Boot, and enhanced client-side functionality with Next.js. I also managed infrastructure optimizations, leveraged AWS services for scaling, and adhered to Agile methodologies to boost productivity. My technical expertise includes Java, Spring Framework, React, AWS, and various databases, with a focus on performance optimization and scalable architecture."
+
+      }
+    ]
+}

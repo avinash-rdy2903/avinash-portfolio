@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +18,7 @@ class Projects extends Component {
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
+      var sectionName = this.props.resumeBasicInfo.section_name.projects.title;
       var projects = this.props.resumeProjects.map(function (projects) {
         return (
           <div
@@ -32,7 +33,7 @@ class Projects extends Component {
                     src={projects.images[0]}
                     alt="projectImages"
                     height="230"
-                    style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
+                    className="image-fluid container"
                   />
                   <span className="project-date">{projects.startDate}</span>
                   <br />
@@ -48,8 +49,8 @@ class Projects extends Component {
     }
 
     return (
-      <section id="portfolio">
-        <div className="col-md-12">
+      <section>
+        <div  id={`${this.props.resumeBasicInfo.section_name.projects.link}`} className="col-md-12">
           <h1 className="section-title" style={{ color: "black" }}>
             <span>{sectionName}</span>
           </h1>
