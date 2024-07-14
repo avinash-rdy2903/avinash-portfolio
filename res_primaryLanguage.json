@@ -1,0 +1,143 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "As a passionate and skilled software engineer, I excel in both frontend and backend development, specializing in React, TypeScript, and AWS. With a Master's in Computer Science from Indiana University and experience in creating robust, scalable applications, I thrive on solving complex technical challenges and driving innovation. My expertise includes RESTful services, microservices architecture, and full-stack development. I'm dedicated to continuous learning and leveraging cutting-edge technologies to build impactful solutions.",
+      "section_name": {
+        "about": "About me",
+        "education": "Education",
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects",
+        "research_achievements":"Research Achievements"                
+      }
+    },
+    "education":[
+      {
+        "institution_name":"Anna University",
+        "degree_name":"Bachelor of Technology",
+        "major":"Information Technology",
+        "start_ts":"Aug 2018",
+        "end_ts":"May 2022",
+        "gpa":"8.92",
+        "gpa_total":"10"
+      },
+      {
+        "institution_name":"Indiana University Bloomington",
+        "degree_name":"Master of Science",
+        "major":"Computer Science",
+        "start_ts":"Aug 2022",
+        "end_ts":"May 2025",
+        "gpa":"3.91",
+        "gpa_total":"4"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Animal Shelter",
+        "startDate": "2020",
+        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Photography",
+        "startDate": "2018",
+        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "3D Object Viewer",
+        "startDate": "2015",
+        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "AISmart Solutions",
+        "title": "Software Engineer",
+        "years": "06.2020 - 05.2022",
+        "mainTech": [
+          "Next.js, Spring Boot, Spring Cloud(Eureka, Api Gateway)"
+        ],
+        "technologies": [
+          "REST API",
+          "Spring Boot",
+          "JavaScript",
+          "Next.js",
+          "Tailwind CSS",
+          "Webpack",
+          "PostgreSQL",
+          "MongoDB",
+          "AWS",
+          "JWT"
+        ],
+        "description":"At AISmart Solutions, I improved SQL query performance, integrated server-side solutions with Spring Boot, and enhanced client-side functionality with Next.js. I also managed infrastructure optimizations, leveraged AWS services for scaling, and adhered to Agile methodologies to boost productivity. My technical expertise includes Java, Spring Framework, React, AWS, and various databases, with a focus on performance optimization and scalable architecture."
+
+      },
+      {
+        "company": "Serros Solutions",
+        "title": "Intern",
+        "years": "01.2018 - 09.2019",
+        "mainTech": [
+          "Angular 7/8"
+        ],
+        "technologies": [
+          "RxJS",
+          "Django",
+          "PHP",
+          "JavaScript",
+          "DHTMLX Gantt"
+        ]
+      }
+    ]
+}

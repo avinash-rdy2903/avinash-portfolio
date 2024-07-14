@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/avinash-portfolio/static/css/main.111facc3.css",
+    "main.js": "/avinash-portfolio/static/js/main.b33d97dd.js",
+    "index.html": "/avinash-portfolio/index.html",
+    "main.111facc3.css.map": "/avinash-portfolio/static/css/main.111facc3.css.map",
+    "main.b33d97dd.js.map": "/avinash-portfolio/static/js/main.b33d97dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.111facc3.css",
+    "static/js/main.b33d97dd.js"
+  ]
+}
