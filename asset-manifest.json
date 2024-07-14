@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/avinash-portfolio/static/css/main.111facc3.css",
-    "main.js": "/avinash-portfolio/static/js/main.a3a87409.js",
+    "main.js": "/avinash-portfolio/static/js/main.9fb9e971.js",
     "index.html": "/avinash-portfolio/index.html",
     "main.111facc3.css.map": "/avinash-portfolio/static/css/main.111facc3.css.map",
-    "main.a3a87409.js.map": "/avinash-portfolio/static/js/main.a3a87409.js.map"
+    "main.9fb9e971.js.map": "/avinash-portfolio/static/js/main.9fb9e971.js.map"
   },
   "entrypoints": [
     "static/css/main.111facc3.css",
-    "static/js/main.a3a87409.js"
+    "static/js/main.9fb9e971.js"
   ]
 }
