@@ -181,8 +181,8 @@
         "startDate": "2021",
         "description": "Extensively analyzed multiple research publications on image segmentation, and engineered a deep learning pipeline to extract different elements fromanswer scripts, that comprise three distinct phases, CNN-PSPNet segment generation, contour extraction, and Question Paper based image reconstruction, digitized the final images using AWS Textract. Deployed the final model with 68% IoU(accuracy) in triangulating question numbers position, using Pyhton’s Flask.",
         "images": [
-          "images/portfolio/animal-shelter/p2.png",
-          "images/portfolio/animal-shelter/p1.svg"
+          "images/portfolio/animal-shelter/p1.jpeg",
+          "images/portfolio/animal-shelter/p2.jpeg"
         ],
         "url": "https://github.com/avinash-rdy2903",
         "technologies": [
