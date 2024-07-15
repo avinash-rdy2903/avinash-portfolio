@@ -57,30 +57,30 @@
     ],
     "projects": [
       {
-        "title": "Flick Match",
+        "title": "Travel Wizard",
         "startDate": "2023",
         "description": "Coordinated a team of three developers, and supervised the UI and integration of new features in the application while troubleshooting issues and tuning the application’s performance. Thus enhancing the response time by 24%. Designed the overall web application system architecture while incorporating CI/CD pipelines. Led and implemented server API endpoints along with middleware, and as a database admin, structured data models to satisfy up to 3NF.",
         "images": [
           "images/portfolio/travel-wizard/travel-wizard-1.jpg",
           "images/portfolio/travel-wizard/travel-wizard-2.jpg"
         ],
-        "url": "",
+        "url": "https://travelwizard-t9.onrender.com/",
         "technologies": [
           {
             "class": "devicon-react-original-wordmark",
             "name": "React"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           },
           {
-            "class": "devicon-java-plain-wordmark",
-            "name": "Java"
+            "class": "devicon-mongodb-original-wordmark",
+            "name": "MongoDB"
           },
           {
-            "class": "devicon-spring-original-wordmark colored",
-            "name":"Spring Boot"
+            "class": "devicon-express-original",
+            "name":"ExpressJS"
           }
         ]
       },
@@ -95,12 +95,36 @@
         "url": "https://github.com/avinash-rdy2903/Distributed-Systems/tree/main/src",
         "technologies": [
           {
-            "class": "devicon-react-original",
-            "name": "React"
+            "class": "devicon-java-original",
+            "name": "Java"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          }
+        ]
+      },
+      {
+        "title":"Advanced Bio-Medical Knowledge Graphs - LLM Integration",
+        "startDate": "2023",
+        "description": "Investigated the integration of Large Language Models (LLMs) to enhance medical knowledge graph accuracy, focusing on reducing hallucinatory outputs crucial for clinical reliability. Focussing on patient-disease-diagnosis-drug relationship. Created an automated Named Entity Recognition (NER) system using advanced models like BioBERT, GPT-4, and other fine-tuned models from Hugging Face Transformers, achieving up to 89.1% accuracy in extracting medical entities, which facilitated the construction of knowledge graphs from complex medical texts. [BioBERT, Claude, GPT-4, Spacy]",
+        "images": [
+          "images/portfolio/llm/p1.png",
+          "images/portfolio/llm/p2.jpeg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-python-original",
+            "name": "Python"
+          },
+          {
+            "class":"devicon-pytorch-original",
+            "name":"PyTorch"
+          },
+          {
+            "class":"devicon-opencv-original",
+            "name":"Open CV"
           }
         ]
       },
@@ -115,16 +139,67 @@
         "url": "https://github.com/avinash-rdy2903/flick-match",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-react-original-wordmark",
+            "name": "React"
           },
           {
             "class": "devicon-typescript-plain",
             "name": "TypeScript"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-spring-original",
+            "name": "Spring Boot"
+          },
+          {
+            "class": "devicon-java-original",
+            "name": "Java"
+          },
+          {
+            "class":"devicon-postgresql-original",
+            "name":"PostgreSQL"
+          }
+        ]
+      },
+      {
+        "title": "Map Reduce",
+        "startDate": "2023",
+        "description": "Designed and implemented a distributed MapReduce systemin Java, capable of running on both single and cluster environments. The system uses network sockets(TCP) for inter-node communication and local file systems for data storage, adhering to a distributed architecture without shared disk access.",
+        "images": [
+          "images/portfolio/photography/p2.png",
+          "images/portfolio/photography/p1.svg"
+        ],
+        "url": "https://github.com/avinash-rdy2903/Distributed-Systems/tree/main/Ass-2/MapReduce",
+        "technologies": [
+          {
+            "class": "devicon-java-original",
+            "name": "Java"
+          }
+        ]
+      },
+      {
+        "title": "Digitization of Answer Scripts",
+        "startDate": "2021",
+        "description": "Extensively analyzed multiple research publications on image segmentation, and engineered a deep learning pipeline to extract different elements fromanswer scripts, that comprise three distinct phases, CNN-PSPNet segment generation, contour extraction, and Question Paper based image reconstruction, digitized the final images using AWS Textract. Deployed the final model with 68% IoU(accuracy) in triangulating question numbers position, using Pyhton’s Flask.",
+        "images": [
+          "images/portfolio/animal-shelter/p2.png",
+          "images/portfolio/animal-shelter/p1.svg"
+        ],
+        "url": "https://github.com/avinash-rdy2903",
+        "technologies": [
+          {
+            "class": "devicon-python-original",
+            "name": "Python"
+          },
+          {
+            "class":"devicon-tensorflow-original",
+            "name":"Tensor Flow"
+          },
+          {
+            "class":"devicon-opencv-original",
+            "name":"Open CV"
+          },{
+            "class":"devicon-flask-original",
+            "name":"Flask"
           }
         ]
       }
@@ -189,5 +264,18 @@
         "description":"At AISmart Solutions, I improved SQL query performance, integrated server-side solutions with Spring Boot, and enhanced client-side functionality with Next.js. I also managed infrastructure optimizations, leveraged AWS services for scaling, and adhered to Agile methodologies to boost productivity. My technical expertise includes Java, Spring Framework, React, AWS, and various databases, with a focus on performance optimization and scalable architecture."
 
       }
-    ]
+    ],
+    "research":{
+      "publications":[
+        {
+          "title":"Advanced Network Surgery Technique Predicting Paddy Leaf Diseases",
+          "author":"Doniparthi Sai Charan, Mettukuru Avinash Reddy",
+          "year":"2022",
+          "publisher":"INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT)",
+          "volume":"CCICS – 2022 (Volume 10 – Issue 13)",
+          "abstract":"Agriculture plays a chiefly role in economy as well as it is considered to be the backbone of economic system for developing countries. For decades, agriculture has been related with the production of vital food crops. Paddy rice is a staple crop for much of the worlds population. It is also a key source of the greenhouse gas methane, responsible for about 40 million tonnes, or 10% of global emissions, each year. Thus, the proposed research work aims to predict the type of disease in a paddy plant to help the farmer in deciding the fertilizer that shall be given to the plant for its healthy growth. Here the trending deep learning technology is used to achieve the proposed solution. An innovative modified VGGNet architecture is proposed which uses two different types of optimization technique to increase the accuracy is used for training the dataset. Then the trained model that is generated by this algorithm is given as an input to the next algorithm where resnet is used to further increase the accuracy of the model. The datasets were collected from UCI real time images as well as the GitHub datasets and the training are performed. The three different types of paddy disease such as bacterial leaf blight, blast, brown spot is used for prediction. The three different types of datasets used were UCI repository, Github images as well as images searched from internet. The experimental results of three diseases show that 97% of accuracy is achieved in predicting the type of disease in paddy plant.",
+          "cite":"Doniparthi Sai Charan, Mettukuru Avinash Reddy, 2022, Advanced Network Surgery Technique Predicting Paddy Leaf Diseases, INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT) CCICS – 2022 (Volume 10 – Issue 13)"
+        }
+      ]
+    }
 }

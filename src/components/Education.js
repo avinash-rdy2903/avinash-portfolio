@@ -24,7 +24,7 @@ let Education = ({resumeBasicInfo, educationData})=>{
                                         </div>
                                         <div className='d-flex justify-content-between'>
                                             <div className="card-subtitle mb-2 fs-3 d-inline">{ele.degree_name+" in "+ele.major}</div>
-                                            <div className='card-subtitle mb-2 me-2fs-3 text-end d-inline'>{`${ele.start_ts} - ${ele.end_ts}`}</div>
+                                            <div className='card-subtitle mb-2 me-2 fs-3 text-end d-inline'>{`${ele.start_ts} - ${ele.end_ts}`}</div>
                                         </div>
                                         <div class="blockquote-footer mt-1 fs-4">{`GPA - ${ele.gpa}/${ele.gpa_total}`}</div>
 

@@ -50,7 +50,7 @@ class Projects extends Component {
 
     return (
       <section>
-        <div  id={`${this.props.resumeBasicInfo.section_name.projects.link}`} className="col-md-12">
+        <div  id={`${this.props.resumeBasicInfo.section_name.projects.link}`} className="col-md-12 container">
           <h1 className="section-title" style={{ color: "black" }}>
             <span>{sectionName}</span>
           </h1>

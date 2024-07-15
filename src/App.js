@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import Research from "./components/Research";
 
 let App= () => {
 
@@ -129,10 +130,10 @@ let App= () => {
         sharedSkills={state.sharedData.skills}
         resumeBasicInfo={state.resumeData.basic_info}
       />
-      <Experience
-        resumeExperience={state.resumeData.experience}
-        resumeBasicInfo={state.resumeData.basic_info}
-      />
+      <Research
+        sectionTitleInfo={state.resumeData.basic_info.section_name.research_achievements}
+        researchData={state.resumeData.research}
+        />
       
       
       <Footer sharedBasicInfo={state.sharedData.basic_info} />

@@ -13,7 +13,7 @@ let  About= (props)=> {
  
 
   const [detailsData,setDetailsData] = useState({
-    profilePic: "/images/" + props.sharedBasicInfo.profile_pic,
+    profilePic: "images/" + props.sharedBasicInfo.profile_pic,
     aws_icon:"images/" + props.sharedBasicInfo.aws_icon,
     hello:props.resumeBasicInfo.description_header,
     sectionName:props.resumeBasicInfo.section_name.about.title,
