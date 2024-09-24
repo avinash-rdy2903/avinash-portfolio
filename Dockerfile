@@ -1,3 +1,4 @@
+# Dockerized Dev ENV 
 FROM node:18-alpine
 WORKDIR /react-app/
 COPY public/ /react-app/public
