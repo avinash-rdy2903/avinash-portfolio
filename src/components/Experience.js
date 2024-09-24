@@ -60,8 +60,15 @@ class Experience extends Component {
             
 
             <div className="container p-2" style={{ textAlign: "left", marginTop: "15px", }}>{tech}</div>
-            <figcaption className="blockquote-footer col-sm-9 mt-2">
-              {work.description}
+            <figcaption className="blockquote-footer col-sm-12 mt-2">
+              <div>
+              <ul style={{listStyleType: 'none',paddingLeft:'0px'}}>
+                {work.description.split('`').map((element, ind) => {
+                  // console.log(element)
+                  return <li key={ind} className="mb-3">{element}</li>
+                })}
+              </ul>
+              </div>
             </figcaption>
           </VerticalTimelineElement>
         );

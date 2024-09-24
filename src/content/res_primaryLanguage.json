@@ -206,24 +206,9 @@
     ],
     "experience": [
       {
-        "company": "Indiana University Bloomington",
-        "title": "Security Operation Intern",
-        "years": "Nov 2023 - May 2024",
-        "mainTech": [
-          "SSH, Azure, Security Engineering, Network Security"
-        ],
-        "technologies": [
-          "Azure",
-          "Linux",
-          "Bash"
-        ],
-        "description":"Effectively handling tier 1 technical analysis and response for cybersecurity incidents to end users and IT staff. Resolved 40% of backlog tickets by developing a log parser that extracts information needed for rapid tier 1 analysis. Thoroughly trained and acted cautiously to adhere to FREPA regulations and University policies in day-to-day operations."
-
-      },
-      {
-        "company": "Delite Software Technologies",
+        "company": "CloudOne",
         "title": "Software Engineer Intern",
-        "years": "May 2023 - July 2023",
+        "years": "May 2023 - Present",
         "mainTech": [
           "React.js, Redux, Spring Boot, Spring Cloud (Eureka, Api Gateway)"
         ],
@@ -243,7 +228,22 @@
 
       },
       {
-        "company": "AISmart Solutions",
+        "company": "Indiana University Bloomington",
+        "title": "Security Operation Intern",
+        "years": "Nov 2023 - May 2024",
+        "mainTech": [
+          "SSH, Azure, Security Engineering, Network Security"
+        ],
+        "technologies": [
+          "Azure",
+          "Linux",
+          "Bash"
+        ],
+        "description":"Effectively handling tier 1 technical analysis and response for cybersecurity incidents to end users and IT staff. Resolved 40% of backlog tickets by developing a log parser that extracts information needed for rapid tier 1 analysis. Thoroughly trained and acted cautiously to adhere to FREPA regulations and University policies in day-to-day operations."
+
+      },
+      {
+        "company": "Delite Software Technologies",
         "title": "Software Engineer",
         "years": "Jun 2020 - May 2022",
         "mainTech": [

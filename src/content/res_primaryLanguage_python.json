@@ -1,0 +1,281 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "As a seasoned software engineer with over 3 years of hands-on experience, I excel in both server-side and client-side development. My technical expertise spans across a variety of technologies including React/ React Native, TypeScript, Python, Django, Flask, Redis, Dynatrace, CSS, GraphQL, FastAPI, Terraform, RPC and AWS. I have a Master's in Computer Science from Indiana University Bloomington and a Bachelor's in Information Technology from Anna University. My professional journey includes significant contributions to infrastructure optimization, database operations, and the implementation of RESTful microservices. I am adept at leveraging frameworks like Django, SQLAlchemy, Redux, and Next.js to enhance application performance and user experience. Certified in AWS and Azure, I thrive in Agile environments and have a proven track record of driving project success.",
+      "section_name": {
+        "home": {
+          "title": "Home",
+          "link": "home"
+        },
+        "about": {
+          "title": "About me",
+          "link": "about"
+        },
+        "education": {
+          "title": "Education",
+          "link": "education"
+        },
+        "experience": {
+          "title": "Experience",
+          "link": "experience"
+        },
+        "skills": {
+          "title": "Skills",
+          "link": "skills"
+        },
+        "projects": {
+          "title": "Projects",
+          "link": "projects"
+        },
+        "research_achievements": {
+          "title": "Research Achievements",
+          "link": "research_achievements"
+        }
+      }      
+    },
+    "education":[
+      {
+        "institution_name":"Indiana University Bloomington",
+        "degree_name":"Master of Science",
+        "major":"Computer Science",
+        "start_ts":"Aug 2022",
+        "end_ts":"May 2025",
+        "gpa":"3.91",
+        "gpa_total":"4",
+        "course_work":"Object-Oriented Software Development, Distributed Systems, Cross-platform Mobile Programming, Applied Machine Learning"
+      },
+      {
+        "institution_name":"Anna University",
+        "degree_name":"Bachelor of Technology",
+        "major":"Information Technology",
+        "start_ts":"Aug 2018",
+        "end_ts":"May 2022",
+        "gpa":"8.92",
+        "gpa_total":"10",
+        "course_work":"Algorithm Design & Analysis, Advanced Data structures, Machine Learning Fundamentals, Probability and Statistics, Database Management  systems, Software Engineering, Principles of Operating Systems, Cloud Computing & Virtualization."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Travel Wizard",
+        "startDate": "2023",
+        "description": "Coordinated a team of three developers, and supervised the UI and integration of new features in the application while troubleshooting issues and tuning the application’s performance. Thus enhancing the response time by 24%. Designed the overall web application system architecture while incorporating CI/CD pipelines. Led and implemented server API endpoints along with middleware, and as a database admin, structured data models to satisfy up to 3NF.",
+        "images": [
+          "images/portfolio/travel-wizard/travel-wizard-1.jpg",
+          "images/portfolio/travel-wizard/travel-wizard-2.jpg"
+        ],
+        "url": "https://travelwizard-t9.onrender.com/",
+        "technologies": [
+          {
+            "class": "devicon-react-original-wordmark",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-mongodb-original-wordmark",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original",
+            "name":"ExpressJS"
+          }
+        ]
+      },
+      {
+        "title": "Distributed Key-Value Store",
+        "startDate": "2023",
+        "description": "Developed a sophisticated distributed key-value store in Java, employing UDP and Multicast protocols for efficient network communication and leveraging Memcached for enhanced object storage. Engineered to support multiple consistency models including sequential, eventual, linearizability, and causal consistency.",
+        "images": [
+          "images/portfolio/photography/p1.svg",
+          "images/portfolio/photography/p2.png"
+        ],
+        "url": "https://github.com/avinash-rdy2903/Distributed-Systems/tree/main/src",
+        "technologies": [
+          {
+            "class": "devicon-java-original",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-bash-plain",
+            "name": "Bash"
+          }
+        ]
+      },
+      {
+        "title":"Advanced Bio-Medical Knowledge Graphs - LLM Integration",
+        "startDate": "2023",
+        "description": "Investigated the integration of Large Language Models (LLMs) to enhance medical knowledge graph accuracy, focusing on reducing hallucinatory outputs crucial for clinical reliability. Focussing on patient-disease-diagnosis-drug relationship. Created an automated Named Entity Recognition (NER) system using advanced models like BioBERT, GPT-4, and other fine-tuned models from Hugging Face Transformers, achieving up to 89.1% accuracy in extracting medical entities, which facilitated the construction of knowledge graphs from complex medical texts. [BioBERT, Claude, GPT-4, Spacy]",
+        "images": [
+          "images/portfolio/llm/p1.png",
+          "images/portfolio/llm/p2.jpeg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-python-original",
+            "name": "Python"
+          },
+          {
+            "class":"devicon-pytorch-original",
+            "name":"PyTorch"
+          },
+          {
+            "class":"devicon-opencv-original",
+            "name":"Open CV"
+          }
+        ]
+      },
+      {
+        "title": "FlickMatch",
+        "startDate": "2023",
+        "description": "Designed ORM using Spring Hibernate and DAO repository layer using JPA Entity Manager. Implemented proactive health-check API, and employed unit testing using JUnit. Caching using AWS ElastiCache for better response time. Utilized Redux library for state management of components and flux architecture for improved scalability. Employed sensors for faster authentication and refined recommendations.",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.png"
+        ],
+        "url": "https://github.com/avinash-rdy2903/flick-match",
+        "technologies": [
+          {
+            "class": "devicon-react-original-wordmark",
+            "name": "React"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-spring-original",
+            "name": "Spring Boot"
+          },
+          {
+            "class": "devicon-java-original",
+            "name": "Java"
+          },
+          {
+            "class":"devicon-postgresql-original",
+            "name":"PostgreSQL"
+          }
+        ]
+      },
+      {
+        "title": "Map Reduce",
+        "startDate": "2023",
+        "description": "Designed and implemented a distributed MapReduce systemin Java, capable of running on both single and cluster environments. The system uses network sockets(TCP) for inter-node communication and local file systems for data storage, adhering to a distributed architecture without shared disk access.",
+        "images": [
+          "images/portfolio/photography/p2.png",
+          "images/portfolio/photography/p1.svg"
+        ],
+        "url": "https://github.com/avinash-rdy2903/Distributed-Systems/tree/main/Ass-2/MapReduce",
+        "technologies": [
+          {
+            "class": "devicon-java-original",
+            "name": "Java"
+          }
+        ]
+      },
+      {
+        "title": "Digitization of Answer Scripts",
+        "startDate": "2021",
+        "description": "Extensively analyzed multiple research publications on image segmentation, and engineered a deep learning pipeline to extract different elements fromanswer scripts, that comprise three distinct phases, CNN-PSPNet segment generation, contour extraction, and Question Paper based image reconstruction, digitized the final images using AWS Textract. Deployed the final model with 68% IoU(accuracy) in triangulating question numbers position, using Pyhton’s Flask.",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpeg",
+          "images/portfolio/animal-shelter/p2.jpeg"
+        ],
+        "url": "https://github.com/avinash-rdy2903",
+        "technologies": [
+          {
+            "class": "devicon-python-original",
+            "name": "Python"
+          },
+          {
+            "class":"devicon-tensorflow-original",
+            "name":"Tensor Flow"
+          },
+          {
+            "class":"devicon-opencv-original",
+            "name":"Open CV"
+          },{
+            "class":"devicon-flask-original",
+            "name":"Flask"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudOne",
+        "title": "Software Engineer",
+        "years": "May 2023 - Present",
+        "mainTech": [
+          "Flask, Python, Selenium, AWS, React, MySQL, Terraform"
+        ],
+        "technologies": [
+          "REST API",
+          "Flask",
+          "JavaScript",
+          "Next.js",
+          "Tailwind CSS",
+          "Webpack",
+          "MySQL",
+          "MongoDB",
+          "AWS",
+          "JWT"
+        ],
+        "description":"I have developed scalable backend infrastructure using Flask, efficiently handling 10,000 daily data processing requests, and automated data collection with Selenium, saving 150 hours of manual effort monthly.` My expertise in Python and MySQL allowed me to optimize Flask APIs and stored procedures, reducing query times by 40% and increasing system performance by 20%.` I also led the migration of a legacy system to a modern web application with ReactJS, enhancing performance by 60% through the use of hooks and Redux for state management.` By implementing indexing techniques and optimizing S3 bucket management, I improved query latency by 40% and reduced cloud costs by 15%.` My test-driven development (TDD) approach, using Selenium, PyTest, and Mocha, ensured robust unit and integration testing, and A/B testing led to a 10% reduction in cross-feature bugs."
+
+      },
+      {
+        "company": "Indiana University Bloomington",
+        "title": "Security Operation Intern",
+        "years": "Nov 2023 - May 2024",
+        "mainTech": [
+          "SSH, Azure, Security Engineering, Network Security"
+        ],
+        "technologies": [
+          "Azure",
+          "Linux",
+          "Bash"
+        ],
+        "description":"Effectively handling tier 1 technical analysis and response for cybersecurity incidents to end users and IT staff.` Resolved 40% of backlog tickets by developing a log parser that extracts information needed for rapid tier 1 analysis.` Thoroughly trained and acted cautiously to adhere to FREPA regulations and University policies in day-to-day operations"
+
+      },
+      {
+        "company": "Delite Software Technologies",
+        "title": "Software Engineer",
+        "years": "Jun 2020 - May 2022",
+        "mainTech": [
+          "Next.js, Django, JWT, Rabbit MQ, Kubernetes, Docker, Jenkins, AWS"
+        ],
+        "technologies": [
+          "Microservices",
+          "Python",
+          "Django",
+          "JavaScript",
+          "Next.js",
+          "Tailwind CSS",
+          "Django ORM",
+          "PostgreSQL",
+          "MongoDB",
+          "AWS"
+        ],
+        "description":"I spearheaded the integration of domain-based Redis caching, reducing request latency by 40%, and utilized AWS Auto Scaling to ensure 99.99% uptime for microservices and UI applications.` My work on React components and Django APIs resulted in a 30% boost in page load speeds and a 50% improvement in data retrieval efficiency, leveraging Django’s JWT module for secure authentication.` Through comprehensive testing using React Jest and Django Pytest frameworks, I reduced reported issues by 75% quarterly.` Monitoring with Splunk and Dynatrace helped minimize system downtime by 80 hours annually.` Additionally, I developed dynamic web applications using jQuery, which led to a 30% improvement in user interaction and a 20% increase in client satisfaction.` By adopting AWS Lambda for serverless computing, I reduced operational costs by 25% during peak loads.` I also optimized PostgreSQL and MongoDB databases, increasing data retrieval speeds by 50% while ensuring 99.9% data availability.` Furthermore, I automated CI/CD pipelines with Jenkins and Docker, reducing deployment cycles by 30%, and employed Agile methodologies to increase team productivity by 40%."
+
+      }
+    ],
+    "research":{
+      "publications":[
+        {
+          "title":"Advanced Network Surgery Technique Predicting Paddy Leaf Diseases",
+          "author":"Doniparthi Sai Charan, Mettukuru Avinash Reddy",
+          "year":"2022",
+          "publisher":"INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT)",
+          "volume":"CCICS – 2022 (Volume 10 – Issue 13)",
+          "abstract":"Agriculture plays a chiefly role in economy as well as it is considered to be the backbone of economic system for developing countries. For decades, agriculture has been related with the production of vital food crops. Paddy rice is a staple crop for much of the worlds population. It is also a key source of the greenhouse gas methane, responsible for about 40 million tonnes, or 10% of global emissions, each year. Thus, the proposed research work aims to predict the type of disease in a paddy plant to help the farmer in deciding the fertilizer that shall be given to the plant for its healthy growth. Here the trending deep learning technology is used to achieve the proposed solution. An innovative modified VGGNet architecture is proposed which uses two different types of optimization technique to increase the accuracy is used for training the dataset. Then the trained model that is generated by this algorithm is given as an input to the next algorithm where resnet is used to further increase the accuracy of the model. The datasets were collected from UCI real time images as well as the GitHub datasets and the training are performed. The three different types of paddy disease such as bacterial leaf blight, blast, brown spot is used for prediction. The three different types of datasets used were UCI repository, Github images as well as images searched from internet. The experimental results of three diseases show that 97% of accuracy is achieved in predicting the type of disease in paddy plant.",
+          "cite":"Doniparthi Sai Charan, Mettukuru Avinash Reddy, 2022, Advanced Network Surgery Technique Predicting Paddy Leaf Diseases, INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT) CCICS – 2022 (Volume 10 – Issue 13)"
+        }
+      ]
+    }
+}

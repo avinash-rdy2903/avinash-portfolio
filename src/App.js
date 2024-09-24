@@ -1,7 +1,10 @@
-import React, {  useState } from "react";
+import React, {  useEffect, useState } from "react";
 import "./App.scss";
-import resumeDataJson from "./res_primaryLanguage.json";
-import sharedDataJson from "./portfolio_shared_data.json";
+import resumeDataJsonJava from "./content/res_primaryLanguage.json";
+import resumeDataJsonNode from "./content/res_primaryLanguage_node.json";
+import resumeDataJsonPython from "./content/res_primaryLanguage_python.json";
+
+import sharedDataJson from "./content/portfolio_shared_data.json";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -14,12 +17,51 @@ import Research from "./components/Research";
 
 let App= () => {
 
-  
+  const [dev,setDev] = useState('ENV_1');
+
   const [state,setState] = useState({
     foo: "bar",
-    resumeData: resumeDataJson,
+    resumeData: null,
     sharedData: sharedDataJson,
   });
+
+  const mappedValues = new Map();
+  mappedValues.set('ENV_1',resumeDataJsonJava);
+  mappedValues.set('ENV_2',resumeDataJsonNode);
+  mappedValues.set('ENV_3',resumeDataJsonPython);
+
+
+  useEffect(()=>{
+
+    const url = window.location.href;
+    let params = new URLSearchParams(document.location.search);
+    let currDev = params.get('dev');
+
+    if(currDev===null && window.history.state!=null){
+      currDev = window.history.state['dev'];
+      
+    }
+
+    if(currDev===null){
+      currDev = 'ENV_1'
+    }
+
+    setState((prev)=>{
+      return {...prev,resumeData:mappedValues.get(currDev)}
+    })
+
+    
+    window.history.pushState({dev:currDev},document.title,window.location.pathname)
+    
+  },[])
+  
+
+  
+
+  
+  
+
+  
   // let loadResumeFromPath= async (path)=> {
   //   try{
   //     let response = await fetch(`/${path}`,{
@@ -71,7 +113,7 @@ let App= () => {
   // },[]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div>
+    state.resumeData ? <div>
       <Navbar sectionTitles = {state.resumeData.basic_info.section_name} />
       <Header sharedData={state.sharedData.basic_info} />
       {/* <div className="col-md-12 mx-auto text-center language">
@@ -137,7 +179,7 @@ let App= () => {
       
       
       <Footer sharedBasicInfo={state.sharedData.basic_info} />
-    </div>
+    </div> : <p></p>
   );
   
 }
